@@ -4,9 +4,8 @@
 // city = name;
 // console.log(city);
 
-
 // 2
-let name = "Olena";
+let name = 'Olena';
 // console.log(`привіт ${1}`);привіт 1
 // console.log(`привіт ${"name"}`);привіт name
 // console.log(`привіт ${name}`);привіт Olena
@@ -60,3 +59,18 @@ let name = "Olena";
 // script.js:55 61
 // script.js:54 like flowers
 // script.js:55 true
+
+// const message = 'Javascript is awesome!';
+
+// // виведення
+// alert(message);
+// console.log(message);
+
+// Отримання даних
+// confirm
+// const isconfirm = confirm('Please confirm reservation');
+// console.log(isconfirm);
+// -true;
+// const test = confirm('yes or no?');
+
+// console.log(test);-true;
