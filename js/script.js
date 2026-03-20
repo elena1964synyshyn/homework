@@ -5,7 +5,7 @@
 // console.log(city);
 
 // 2
-let name = 'Olena';
+// let name = 'Olena';
 // console.log(`привіт ${1}`);привіт 1
 // console.log(`привіт ${"name"}`);привіт name
 // console.log(`привіт ${name}`);привіт Olena
