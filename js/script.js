@@ -181,10 +181,10 @@
 // 2+2===4? console.log("1") : console.log("2")
 // 5*5===24 ? console.log(true) : console.log(false);
 
-if (5+5 === 7){
-  console.log("5+5 === 7");
-}else if(2+2 === 4){
-  console.log("2+2 === 4");
-}else{
-  console.log("no");
-} 
+// if (5+5 === 7){
+//   console.log("5+5 === 7");
+// }else if(2+2 === 4){
+//   console.log("2+2 === 4");
+// }else{
+//   console.log("no");
+// } 
