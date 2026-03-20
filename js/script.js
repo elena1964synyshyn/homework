@@ -37,7 +37,7 @@
 
 //***9**
 // let user = {};
-// user.name = " Olena";
+// user.name = 'Olena';
 // user.age = 61;
 // user.city = "Napoli";
 // // console.log(user);
@@ -74,3 +74,10 @@
 // const test = confirm('yes or no?');
 
 // console.log(test);-true;
+
+// confirm
+// const isConfirm = confirm('Please cofirm reservation');
+// console.log(isconfirm);
+
+const test = confirm('Yes or no?');
+console.log = test;
