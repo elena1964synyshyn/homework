@@ -177,7 +177,7 @@
 //   console.log("Hello");
 // }else{console.log("No hello");}
 
-// Тернарний оператор
+// // Тернарний оператор
 // 2+2===4? console.log("1") : console.log("2")
 // 5*5===24 ? console.log(true) : console.log(false);
 
@@ -188,3 +188,142 @@
 // }else{
 //   console.log("no");
 // } 
+
+// let lend = "ua";
+// if (lend === "ua") {
+//   console.log("понеділок");
+// } else if (lend ==="en") { 
+//   console.log("Monday");
+// } else{
+//   console.log("Reset");
+// }
+
+// switch/case
+
+// let num = 10
+// switch (num) {
+//   case 0:
+//     console.log(0);
+//   break;
+//    case 5:
+//     console.log(5);
+//   break;
+//   case 10:
+//     console.log(10);
+//   break;
+// }
+
+// let cost;
+// const sub =  "premium";
+// switch (sub) {
+//   case 'free':
+//   cost = 0;
+//   break;  
+
+//   case "pro":
+//     cost = 100;
+//     break;
+
+//     case "premium":
+//       cost = 500;
+
+//       default : console.log("Invalid sub");
+// }
+// console.log(cost);
+
+// const min = prompt("Введіть хвилину");
+// if (min >= 0 && min <=14) {
+//   console.log("Перша чверть") 
+// } else if ( min >=15 && min <=29) {
+//   console.log("Друга чверть ")
+// } else if (min >= 30 && min <= 44) {
+//   console.log ("Третя чверть")
+// } else if ( min >= 45 && min <=59) {
+//   console.log("четверта чверть");
+// }
+
+// const value = prompt("Введіть назву товару").toLowerCase();
+// let cost;
+
+// switch (value) {
+//   case "яблуко":
+//     cost =10
+//     alert(`${value} коштує ${cost} гривень`); 
+//     break;
+
+//     case "вишня":
+//     cost =50
+//     alert(`${value} коштує ${cost} гривень`); 
+//     break;
+
+//     case "груша":
+//     cost =45
+//     alert(`${value} коштує ${cost} гривень`); 
+//     break;
+
+//     case "чорниця":
+//     cost =135
+//     alert(`${value} коштує ${cost} гривень`); 
+//     break;
+
+//     case "диня":
+//     cost =170
+//     alert(`${value} коштує ${cost} гривень`); 
+//     break; 
+//     default:
+//        alert(`Товару ${value}, немає в наявності`);
+// }
+
+
+// ----Домашнє завдання----
+
+// let = 1;
+// console.log(1>0);
+// let =0; 
+// console.log(0>0);
+// let = -3;
+// console.log(-3<0);
+
+
+// let = 'test';
+// console.log('test' === 'test');
+// let = 'querty';
+// console.log('test' ==='querty' );
+// let = true;
+// console.log('test' ===true );
+
+
+// let =1 ;
+// console.log(1 > 10 ? 1 - 5 : 1 + 5); // 6  — 1 менше 10, додаємо 5
+
+// let = 10;
+// console.log(10 > 10 ? 10 -5 : 10 + 5);  // 15 — 10 не більше 10, додаємо 5
+
+// let =13 ;
+// console.log(13 > 10 ? 13 - 5 : 13 + 5);  // 8  — 13 більше 10, віднімаємо 5
+
+// const month = prompt('Введіть число від 1 до 12:');
+
+// const months = {
+//     1: 'Січень',
+//     2: 'Лютий',
+//     3: 'Березень',
+//     4: 'Квітень',
+//     5: 'Травень',
+//     6: 'Червень',
+//     7: 'Липень',
+//     8: 'Серпень',
+//     9: 'Вересень',
+//     10: 'Жовтень',
+//     11: 'Листопад',
+//     12: 'Грудень'
+// };
+// console.log(months[month] ?? 'Невірне число!');
+
+// const num = prompt('Введіть тризначне число:');
+
+// const a = Number(num[123]);
+// const b = Number(num[456]);
+// const c = Number(num[999]);
+
+// console.log(123 + 456 + 999);
