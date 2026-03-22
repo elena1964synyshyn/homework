@@ -451,7 +451,7 @@
 // arr.push(4);
 // console.log(arr2);
 
-let arr = ["a", "b", "c" , "d", "f"];
+// let arr = ["a", "b", "c" , "d", "f"];
 
 // delete arr[2];
 // console.log(arr);  так з масивами робити не можна, видаляється по іншому
@@ -461,14 +461,56 @@ let arr = ["a", "b", "c" , "d", "f"];
 
 // console.log(arr.slice(1, 3));
 
-let a=[1,2,3];
-let b=[4,5,6];
+// let a = [1, 2, 3];
+// console.log(arr.concat(a, "test"));
+
+// console.log(arr.indexOf("c", 1));
+// console.log(arr.lastIndexOf("c"));
+
+// console.log(arr.includes("c", 1));
+
+// Find
+
+// const fruts = [
+//   { id: 0, name: "Apple"},
+//   { id: 1, name: "Tomat"},
+//    { id: 2, name: "Cherry"},
+//     { id: 3, name: "Orange"},
+// ];
+
+// console.log(fruts.find((item) => item.id === 1));
+// console.log(fruts.find((item) => item.id === 2));
+// console.log(fruts.find((item) => item.id === 3));
+
+// console.log(fruts.filter((item) => item.id < 2));
+
+// Map
+
+// let result = fruts.map((item) => item.name.length);
+
+// console.log(result);
+
+// ---Split
+
+// let names = 'Luba, Lena, David, Sofia';
+
+// let arr = names.split(", ");
+// console.log(arr);
+
+// let newString =arr.join(", ");
+// console.log(newString);
+
+// let arr = [1, 2, 3, 4, 5];
+// let red = arr.reduce((summ, item)=> summ+item);
+// console.log(red);
 
 
+// let arr =[23, 40, 30];
+// let summ = arr.reduce((sum, item) => sum + item) / arr.lengts;
+// console.log(summ);???
 
 
-
-
+// ------------------------------------------------------------
 
 
 
