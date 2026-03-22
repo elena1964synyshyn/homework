@@ -273,7 +273,7 @@
 //     default:
 //        alert(`Товару ${value}, немає в наявності`);
 // }
-
+// ------------------------------------------------------------
 
 // ----Домашнє завдання----
 
@@ -327,7 +327,7 @@
 // const c = Number(num[999]);
 
 // console.log(123 + 456 + 999);
-
+// ------------------------------------------------------------
 
 // Модуль №23. Mасиви i цикли
 
@@ -353,3 +353,124 @@
 //   console.log("a" , a);
 //   a--;
 // }
+
+// do while
+
+
+// let a = 0;
+// do {
+//   console.log(a);
+//   a++;
+// } while ( a < 5);
+
+// for
+
+// for (let a=0 ; a<3; a++) {
+//   console.log(a);
+// } 
+// // aбо
+// let a = 0;
+// for(; a< 3; a++) {
+//   console.log(a);
+// }
+
+// break && continue
+
+// let summ = 0;
+// while (true) {
+//  let value =+prompt("Введіть число");
+//  if (!value) break; 
+//  summ += value;
+// }
+// console.log("Summ" , summ);
+
+// for (let i = 0; i < 10; i++) {
+//   if(i % 2 === 0) continue; console.log(i);
+// }
+
+
+// масиви
+
+// let arr = ["apple","orange","plum"];
+
+
+// arr[2] = "lemon";
+// arr[3] = "cherry";
+
+// console.log(arr);
+
+// arr.push("tomat");
+// console.log(arr);
+
+// arr.pop();
+// console.log(arr);
+
+// arr.shift();
+// console.log(arr);
+
+// arr.unshift("tomat");
+// console.log(arr);
+
+
+// старий метод:
+
+// for (let i = 0; i<arr.length; i++){
+//  console.log(arr[i]) ;  
+// }
+
+// Новий метод
+
+// for (let item of arr) {
+// console.log(item); 
+// }
+
+// виводити на індекс(не дуже хороший перебір):
+
+// for(let key in arr){
+//   console.log(arr[key]);
+// }
+
+// let matrix = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9],
+// ];
+// console.log(matrix[1] [2]);
+
+// Методи привсоєння.
+
+// let a=5;
+// let b=a;
+// a=10;
+
+// console.log(a);
+// console.log(b);
+
+// let arr = [1,2,3];
+// let arr2 = arr;
+// arr.push(4);
+// console.log(arr2);
+
+let arr = ["a", "b", "c" , "d", "f"];
+
+// delete arr[2];
+// console.log(arr);  так з масивами робити не можна, видаляється по іншому
+
+// arr.splice(2, 1);
+// console.log(arr);
+
+// console.log(arr.slice(1, 3));
+
+let a=[1,2,3];
+let b=[4,5,6];
+
+
+
+
+
+
+
+
+
+
+
