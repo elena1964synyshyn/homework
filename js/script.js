@@ -511,8 +511,67 @@
 
 
 // ------------------------------------------------------------
+// Д/З до модуля № 23
+
+// 1------
+
+// const fruts =[
+//   {id: 0, name: "Apple"},
+//    { id: 1, name: "Tomat" },
+//   { id: 2, name: "Cherry" },
+//   { id: 3, name: "Orange" },
+// ];
+// const names = fruts.map(fruit => fruit.name);
+// console.log(fruts);
+
+// 2------
+
+// for (let i = 2; i <= 10; i += 2) {
+//   console.log(i);
+// };
+
+// 3--------
+
+// let i = 0;
+// for (let i = 0; i < 5; i++) {
+//   console.log(`number ${i}!`);
+// };
+
+// while (i < 5) {
+//   console.log(`number ${i}!`);
+//   i++;
+// };
 
 
+// 4-------
 
+// let number;
 
+// do {
+//   number = prompt("Введіть число більше за 100:");
+
+//   if (number === "" || number === null) {
+//     alert("Ввід скасовано!");
+//     break;
+//   }
+
+// } while (number <= 100);
+
+// if (number > 100) {
+//   alert(`Чудово! Ви ввели число ${number}, яке більше за 100!`);
+// }
+
+// 5-------
+
+// const users = [
+//   { name: "Оля", age: 23 },
+//   { name: "Аня", age: 29 },
+//   { name: "Юля", age: 10 },
+//   { name: "Катя", age: 20 },
+// ];
+
+// const averageAge = users.reduce((sum, user) => sum + user.age, 0) / users.length;
+
+// console.log(`Середній вік: ${averageAge}`);
+// -----Середній вік: 20.5-----
 
