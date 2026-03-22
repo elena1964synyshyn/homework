@@ -327,3 +327,29 @@
 // const c = Number(num[999]);
 
 // console.log(123 + 456 + 999);
+
+
+// Модуль №23. Mасиви i цикли
+
+// const a =5;
+
+// if (true) {
+//   const b = 10;
+//   console.log("block", b);
+  
+// }
+// console.log("global", a);
+
+// Цикли
+
+// let a = 0;
+// while (a<5) {
+//   a++;
+//   console.log("a", a);
+// }
+
+// let a= 3;
+// while (a) {
+//   console.log("a" , a);
+//   a--;
+// }
