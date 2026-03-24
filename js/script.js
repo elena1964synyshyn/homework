@@ -1,6 +1,6 @@
 // ------------------------------------------------------------
 
-// // ----Домашнє завдання----
+// // ----Домашнє завдання до модуля № 22----
 
 // // let = 1;
 // // console.log(1>0);
@@ -117,4 +117,21 @@
 
 // // console.log(`Середній вік: ${averageAge}`);
 // // -----Середній вік: 20.5-----
+// -----------------------------------------------------------
 
+
+// Модуль № 24
+
+// Функції
+
+// function showMessage (name, sity) {
+//  console.log(" hello , my name is " + name + " I'm from " + sity); 
+// }
+// showMessage("Nata", "Napoli");
+// showMessage("Olena", "Lviv");
+
+const sayHi = function () {
+console.log("Hi") ; 
+} ;
+sayHi();
+  
