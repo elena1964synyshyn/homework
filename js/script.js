@@ -161,3 +161,63 @@
 //     alert('Ви скасували виконання.');
 //   },
 // );
+
+// Д/З до модуля № 25
+
+// ---1---
+
+// const student = {
+//   name: 'Olena',
+//   speciality: 'Frontend',
+//   course: 1,
+
+//   getInfo: function () {
+//     console.log(
+//       `Ім'я: ${this.name}, Спеціальність: ${this.specialty}, Середній бал: ${this.gpa}, Пропущені заняття: ${this.missedClasses}`,
+//     );
+//   },
+// };
+
+// const student1 = {
+//   name: 'Ivan',
+//   specialty: 'Backend',
+//   gpa: 4.5,
+//   missedClasses: 2,
+// };
+// const student2 = {
+//   name: 'Марія',
+//   specialty: 'Математика',
+//   gpa: 3.8,
+//   missedClasses: 7,
+// };
+// const student3 = {
+//   name: 'Олег',
+//   specialty: 'Фізика',
+//   gpa: 4.1,
+//   missedClasses: 1,
+// };
+
+// student.getInfo.call(student1);
+// student.getInfo.apply(student2);
+// student.getInfo.bind(student3)();
+
+//2
+// function showHTML() {
+//   document.getElementById('result').innerHTML =
+//     'HTML — це мова розмітки, яка визначає структуру веб-сторінки за допомогою тегів.';
+// }
+// function showCSS() {
+//   document.getElementById('result').innerHTML =
+//     'CSS — це мова стилів, яка використовується для опису вигляду та форматування веб-сторінки.';
+// }
+
+//3
+
+// function shop(name, pricePerKg, quantity) {
+//   const totalCost = pricePerKg * quantity;
+//   return `Товар: ${name}, Вартість: ${totalCost.toFixed(2)} грн`;
+// }
+
+// console.log(shop('banana', 30, 4.5));
+// console.log(shop('cherry', 58, 1.3));
+// console.log(shop('orange', 89, 3.4));
