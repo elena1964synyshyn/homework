@@ -4,11 +4,10 @@
 
 // // let = 1;
 // // console.log(1>0);
-// // let =0; 
+// // let =0;
 // // console.log(0>0);
 // // let = -3;
 // // console.log(-3<0);
-
 
 // // let = 'test';
 // // console.log('test' === 'test');
@@ -16,7 +15,6 @@
 // // console.log('test' ==='querty' );
 // // let = true;
 // // console.log('test' ===true );
-
 
 // // let =1 ;
 // // console.log(1 > 10 ? 1 - 5 : 1 + 5); // 6  — 1 менше 10, додаємо 5
@@ -85,7 +83,6 @@
 // //   i++;
 // // };
 
-
 // // 4-------
 
 // // let number;
@@ -119,126 +116,48 @@
 // // -----Середній вік: 20.5-----
 // -----------------------------------------------------------
 
+// Домашка до модуля № 24
 
-// Модуль № 24
+// ---1---
 
-// Функції
-
-// function showMessage (name, sity) {
-//  console.log(" hello , my name is " + name + " I'm from " + sity); 
-// }
-// showMessage("Nata", "Napoli");
-// showMessage("Olena", "Lviv");
-
-
-// const userName = "Ann";
-// const sayHi = function () {
-//   let messege = "Hello, my name ";
-//   console.log(messege + userName);
-// console.log("Hi") ; 
-// } ;
-// sayHi();
-
-// function summ(a, b) {
-  
-//  return a+b; 
-// }
-// let result = summ(7,8);
-// console.log(result);
- 
-// const testFunk = function (a,b) {
-//   console.log("a :", a)
-//   console.log("b :", b);
-
-//   return testFunk;
-// };
-// testFunk(5, 8);
-
-// Порядок виконання коду
-
-// const a = function(){
-//  console.log("function a");
-   
-// };
-// const b = function(){
-// console.log("function b");
-// };
-// const c = function(){
-// console.log("function c");
-// };
-// a();
-
-// Аргументи і rest
-
-// const addName = function(...arg){
-//   // const arg= Array.from(arguments);
-//   // console.log(arguments);
-//   console.log(arg);
-// };
-// addName(1, 3, 5);
-
-// Callback
-
-// function ask(questions, yes, no){
-//  if( confirm(questions)) {
-//   yes();
-
-//  } else {
-//   no();
-//  }
-// }
-// function showOk(){
-//   console.log("you say ok");
-// }
-// function showCancel(){
-//   console.log("you say No");
-// }
-// ask(" Yes or no?", showOk, showCancel);
-
-// Hof
-
-// const hello = function (name){
-//   console.log(`Hello, ${name}`);
-// };
-// const searchName = function(callback){
-// const name = "Ivan";
-// callback(name);
-// };
-// searchName(hello);
-// // hello("Ann");
-
-// function  checkAge(age) {
-// if(age > 18){
-//   return console.log("Hello");
-// } 
-//   return console.log("Good Bye");
- 
-// }
-// checkAge(12);
-
-// function showMovie(age){
-//   if(age< 21){
-//     return
+// function checkAge(age) {
+//   if (age >= 18) {
+//     return true;
+//   } else {
+//     return confirm('Батьки дозволили?');
 //   }
-//   return console.log("Go to movie!");
 // }
-// showMovie(21);
+// console.log(checkAge(20));
+// console.log(checkAge(15));
 
+// function checkAge(age) {
+//   return age > 18 ? true : confirm('Батьки дозволили?');
+// }
+// function checkAge(age) {
+//   return age > 18 || confirm('Батьки дозволили?');
+// }
 
-// Стрілочні функції
+// ---2---
+// function min(a, b) {
+//   return a < b ? a : b;
+// }
+// console.log(min(5, 10));
+// console.log(min(-3, 2));
+// console.log(min(1, 1));
 
-// const test = (arg) => {
-// console.log(arg);
+// ---3---
 
+// const ask = (question, yes, no) => {
+//   if (confirm(question)) yes();
+//   else no();
 // };
 
-// test("hello");
-
-// const showMovie = (age) => {
-// if(age > 21){
-//  return console.log("hello");
- 
-// }
-// return console.log("bye");
-// };
-// showMovie(12);
+// ask(
+//   'Ви згодні?',
+//   () => {
+//     alert('Ви погодились.');
+//   },
+//   () => {
+//     alert('Ви скасували виконання.');
+//   },
+// );
