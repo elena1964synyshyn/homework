@@ -213,11 +213,11 @@
 
 //3
 
-// function shop(name, pricePerKg, quantity) {
-//   const totalCost = pricePerKg * quantity;
-//   return `Товар: ${name}, Вартість: ${totalCost.toFixed(2)} грн`;
-// }
+function shop(name, pricePerKg, quantity) {
+  const totalCost = pricePerKg * quantity;
+  return `Товар: ${name}, Вартість: ${totalCost.toFixed(2)} грн`;
+}
 
-// console.log(shop('banana', 30, 4.5));
-// console.log(shop('cherry', 58, 1.3));
-// console.log(shop('orange', 89, 3.4));
+console.log(shop('banana', 30, 4.5));
+console.log(shop('cherry', 58, 1.3));
+console.log(shop('orange', 89, 3.4));
