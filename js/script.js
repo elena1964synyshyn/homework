@@ -256,3 +256,39 @@
 
 // user1.phone = '+380991234568';
 // console.log(user1.info);
+
+/////////////Д/З до модуля № 27
+
+// const Calculator = function () {
+//   this.a = 0;
+//   this.b = 0;
+
+//   this.read = function () {
+//     this.a = parseFloat(prompt('Введіть перше число:'));
+//     this.b = parseFloat(prompt('Введіть друге число:'));
+//   };
+
+//   this.sum = function () {
+//     return this.a + this.b;
+//   };
+
+//   this.mul = function () {
+//     return this.a * this.b;
+//   };
+// };
+
+// const calc = new Calculator();
+// calc.read();
+// console.log('Сума:', calc.sum());
+// console.log('Добуток:', calc.mul());
+
+// **Як це працює:**
+
+// - `read()` — через `prompt` отримує два числа та зберігає їх у `this.a` і `this.b`. `Number()` перетворює рядок з prompt на число
+// - `sum()` — повертає `a + b`
+// - `mul()` — повертає `a * b`
+
+// **Приклад результату** якщо ввести `5` і `3`:
+// ```
+// Сума: 8
+// Множення: 15
