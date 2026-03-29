@@ -381,3 +381,164 @@
 // // infoCar.showInfo.bind(car2)();
 // //
 // infoCar.showInfo.apply(car2);
+
+//  модуль № 26
+
+// Процедурне програмування
+
+// const summ = 20000;
+// const month = 12;
+// const p = 1000;
+// const credit = (sum, month, p) => {
+//   return sum + p * month;
+// };
+
+// console.log(credit(summ, month, p));
+
+// Об'єктно-орієнтоване програмування
+
+// const credit = {
+//   summ: 20000,
+//   month: 12,
+//   p: 1000,
+
+//   result() {
+//     return this.summ + this.p * this.month;
+//   },
+// };
+
+// console.log(credit.result());
+
+// Class
+// Об*єкт
+// Інтерфейс
+
+// class Bank {
+//   static type = 'Privat';
+//   constructor(Options) {
+//     this.summ = Options.summ;
+//     this.month = Options.month;
+//     this.p = Options.p;
+//   }
+
+//   credit() {
+//     return console.log('I am Privat');
+//   }
+// }
+
+// const userBank = new Bank({
+//   summ: 30000,
+//   month: 5,
+//   p: 500,
+// });
+// userBank.credit();
+// console.log(Bank.type);
+
+// class NewBank extends Bank {
+//   constructor(Options) {
+//     super(Options);
+//     this.card = Options.card;
+//   }
+//   credit() {
+//     super.credit();
+//     return console.log('I am Aval');
+//   }
+// }
+// const aval = new NewBank({
+//   summ: 30000,
+//   month: 5,
+//   p: 500,
+//   card: true,
+// });
+// console.log(aval.credit());
+
+// get & set
+
+// class User {
+//   constructor(props) {
+//     this.name = props.name;
+//     this.age = props.age;
+//   }
+//   firstName = '';
+//   lastName = '';
+//   age = '';
+//   city = '';
+
+//   set name(newName) {
+//     const nameRow = newName.split(' ');
+//     this.firstName = nameRow[0];
+//     this.lastName = nameRow.slice(1);
+//   }
+
+//   get name() {
+//     return ` First name: ${this.firstName} lastName: ${this.lastName}`;
+//   }
+// }
+
+// const Olena = new User({
+//   name: 'Olena Ivanova',
+// });
+
+// const Valia = new User({
+//   name: 'Valia Petrova',
+// });
+// console.log(Olena.name);
+// console.log(Valia.name);
+
+// const a = [1, 2, 3];
+// console.log(a);
+
+// const a = {
+//   x: 1,
+//   y: 2,
+// };
+
+// const b = Object.create(a);
+
+// console.log(b);
+
+// const Manager = function (name, sales) {
+//   this.name = name;
+//   this.sales = sales;
+
+//   // this.sale = function () {
+//   //   this.sales += 1;
+//   // };
+// };
+
+// const ann = new Manager('Ann', 5);
+// const ivan = new Manager('Ivan', 10);
+
+// console.log(ann);
+// console.log(ivan);
+
+// Manager.prototype.sale = function () {
+//   this.sales += 1;
+// };
+// // console.log(ann.sales);
+// // ann.sale();
+
+// // console.log(ann.sales);
+// console.dir(Manager);
+
+// class CoffeMachine {
+//   _water = 0;
+//   #waterLimit = 500;
+
+//   constructor(power) {
+//     this.power = power;
+//   }
+
+//   set waterAmount(value) {
+//     if (value < 0) {
+//       value = 0;
+//     }
+//     this._water = value;
+//   }
+// }
+
+// let coffeMachine = new CoffeMachine(100);
+// console.log(coffeMachine);
+
+// coffeMachine.waterAmount = -20;
+// console.log(coffeMachine);

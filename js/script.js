@@ -213,11 +213,46 @@
 
 //3
 
-function shop(name, pricePerKg, quantity) {
-  const totalCost = pricePerKg * quantity;
-  return `Товар: ${name}, Вартість: ${totalCost.toFixed(2)} грн`;
-}
+// function shop(name, pricePerKg, quantity) {
+//   const totalCost = pricePerKg * quantity;
+//   return `Товар: ${name}, Вартість: ${totalCost.toFixed(2)} грн`;
+// }
 
-console.log(shop('banana', 30, 4.5));
-console.log(shop('cherry', 58, 1.3));
-console.log(shop('orange', 89, 3.4));
+// console.log(shop('banana', 30, 4.5));
+// console.log(shop('cherry', 58, 1.3));
+// console.log(shop('orange', 89, 3.4));
+
+////////////////////////////////////////
+// Д/З до модуля № 26
+
+// ---1---
+
+// class Abonent {
+//   constructor(name, phone) {
+//     this.name = name;
+//     this._phone = phone;
+//   }
+
+//   set phone(newPhone) {
+//     if (typeof newPhone === 'string' && newPhone.length > 0) {
+//       this._phone = newPhone;
+//     } else {
+//       console.log('Невірний номер телефону!');
+//     }
+//   }
+
+//   get info() {
+//     return `Абонент: ${this.name}, Телефон: ${this._phone}`;
+//   }
+// }
+
+// const user1 = new Abonent('Анна', '+380991234567');
+// const user2 = new Abonent('Іван', '+380507654321');
+// const user3 = new Abonent('Олена', '+380631112233');
+
+// console.log(user1.info);
+// console.log(user2.info);
+// console.log(user3.info);
+
+// user1.phone = '+380991234568';
+// console.log(user1.info);
