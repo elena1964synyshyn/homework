@@ -292,3 +292,37 @@
 // ```
 // Сума: 8
 // Множення: 15
+
+// Д/З до модуля № 28
+// Д/З: Створити меню з жанрами фільмів. При кліку на жанр виводити назви фільмів цього жанру. (можна використовувати будь-які жанри та фільми)
+
+const data = {
+  Фантастика: ['Inception', 'Interstellar', 'The Matrix', 'Dune', 'Arrival'],
+  Жахи: ['Hereditary', 'The Shining', 'Get Out', 'A Quiet Place', 'Midsommar'],
+  Комедія: [
+    'The Grand Budapest Hotel',
+    'Superbad',
+    'Knives Out',
+    'Game Night',
+    'The Nice Guys',
+  ],
+  Драма: [
+    'The Shawshank Redemption',
+    'Parasite',
+    'Whiplash',
+    'Moonlight',
+    '1917',
+  ],
+  Бойовик: [
+    'Mad Max: Fury Road',
+    'John Wick',
+    'The Dark Knight',
+    'Mission Impossible',
+    'Top Gun',
+  ],
+};
+
+const genresEl = document.getElementById('genre');
+const filmsBox = document.getElementById('films-box');
+const filmsTitle = document.getElementById('films-title');
+const filmsList = document.getElementById('films-list');

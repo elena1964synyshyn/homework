@@ -542,3 +542,39 @@
 
 // coffeMachine.waterAmount = -20;
 // console.log(coffeMachine);
+
+// const item = document.createElement('a');
+// item.href = '#';
+// item.classList.add('btn');
+// item.textContent = '3';
+
+// const nav = document.querySelector('.naw');
+// nav.appendChild(item);
+
+// const heading = document.createElement('h1');
+// heading.textContent = 'My Website';
+// const container = document.querySelector('.container');
+// container.insertBefore(heading, nav);
+
+// nav.removeChild(item);
+// item.remove();
+
+// const text = document.querySelector('.text');
+// const parent = document.querySelector('.parent');
+// const clone = text.cloneNode(true);
+// parent.appendChild(clone);
+
+// const container = document.querySelector('.container');
+// const text = `<p>Sorry</p>`;
+// container.innerHTML += text;
+
+// const list = document.querySelector('#list');
+// list.insertAdjacentHTML('beforebegin', '<p>beforebegin</p>');
+// list.insertAdjacentHTML('afterbegin', '<li>afterbegin</li>');
+// list.insertAdjacentHTML('beforeend', '<li>beforeend</li>');
+// list.insertAdjacentHTML('afterend', '<p>afterend</p>');
+
+// let elements = document.querySelectorAll('ul > li:last-child');
+// for (let elem of elements) {
+//   alert(elem.innerHTML); // "тест", "пройдено"
+// }
