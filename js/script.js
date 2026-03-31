@@ -322,7 +322,31 @@ const data = {
   ],
 };
 
-const genresEl = document.getElementById('genre');
+const genresEl = document.getElementById('genres');
 const filmsBox = document.getElementById('films-box');
 const filmsTitle = document.getElementById('films-title');
 const filmsList = document.getElementById('films-list');
+let activeBtn = null;
+
+// Створюємо кнопку для кожного жанру
+Object.keys(data).forEach(genre => {
+  const btn = document.createElement('button');
+  btn.className = 'genre-btn';
+  btn.textContent = genre;
+
+  btn.addEventListener('click', () => {
+    // Знімаємо active з попередньої кнопки
+    if (activeBtn) activeBtn.classList.remove('active');
+    btn.classList.add('active');
+    activeBtn = btn;
+
+    // Показуємо фільми
+    filmsTitle.textContent = genre;
+    filmsList.innerHTML = data[genre]
+      .map(film => `<div class="film-item">${film}</div>`)
+      .join('');
+    filmsBox.style.display = 'block';
+  });
+
+  genresEl.appendChild(btn);
+});
