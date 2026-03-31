@@ -294,59 +294,60 @@
 // Множення: 15
 
 // Д/З до модуля № 28
+
 // Д/З: Створити меню з жанрами фільмів. При кліку на жанр виводити назви фільмів цього жанру. (можна використовувати будь-які жанри та фільми)
 
-const data = {
-  Фантастика: ['Inception', 'Interstellar', 'The Matrix', 'Dune', 'Arrival'],
-  Жахи: ['Hereditary', 'The Shining', 'Get Out', 'A Quiet Place', 'Midsommar'],
-  Комедія: [
-    'The Grand Budapest Hotel',
-    'Superbad',
-    'Knives Out',
-    'Game Night',
-    'The Nice Guys',
-  ],
-  Драма: [
-    'The Shawshank Redemption',
-    'Parasite',
-    'Whiplash',
-    'Moonlight',
-    '1917',
-  ],
-  Бойовик: [
-    'Mad Max: Fury Road',
-    'John Wick',
-    'The Dark Knight',
-    'Mission Impossible',
-    'Top Gun',
-  ],
-};
+// const data = {
+//   Фантастика: ['Inception', 'Interstellar', 'The Matrix', 'Dune', 'Arrival'],
+//   Жахи: ['Hereditary', 'The Shining', 'Get Out', 'A Quiet Place', 'Midsommar'],
+//   Комедія: [
+//     'The Grand Budapest Hotel',
+//     'Superbad',
+//     'Knives Out',
+//     'Game Night',
+//     'The Nice Guys',
+//   ],
+//   Драма: [
+//     'The Shawshank Redemption',
+//     'Parasite',
+//     'Whiplash',
+//     'Moonlight',
+//     '1917',
+//   ],
+//   Бойовик: [
+//     'Mad Max: Fury Road',
+//     'John Wick',
+//     'The Dark Knight',
+//     'Mission Impossible',
+//     'Top Gun',
+//   ],
+// };
 
-const genresEl = document.getElementById('genres');
-const filmsBox = document.getElementById('films-box');
-const filmsTitle = document.getElementById('films-title');
-const filmsList = document.getElementById('films-list');
-let activeBtn = null;
+// const genresEl = document.getElementById('genres');
+// const filmsBox = document.getElementById('films-box');
+// const filmsTitle = document.getElementById('films-title');
+// const filmsList = document.getElementById('films-list');
+// let activeBtn = null;
 
-// Створюємо кнопку для кожного жанру
-Object.keys(data).forEach(genre => {
-  const btn = document.createElement('button');
-  btn.className = 'genre-btn';
-  btn.textContent = genre;
+// // Створюємо кнопку для кожного жанру
+// Object.keys(data).forEach(genre => {
+//   const btn = document.createElement('button');
+//   btn.className = 'genre-btn';
+//   btn.textContent = genre;
 
-  btn.addEventListener('click', () => {
-    // Знімаємо active з попередньої кнопки
-    if (activeBtn) activeBtn.classList.remove('active');
-    btn.classList.add('active');
-    activeBtn = btn;
+//   btn.addEventListener('click', () => {
+//     // Знімаємо active з попередньої кнопки
+//     if (activeBtn) activeBtn.classList.remove('active');
+//     btn.classList.add('active');
+//     activeBtn = btn;
 
-    // Показуємо фільми
-    filmsTitle.textContent = genre;
-    filmsList.innerHTML = data[genre]
-      .map(film => `<div class="film-item">${film}</div>`)
-      .join('');
-    filmsBox.style.display = 'block';
-  });
+//     // Показуємо фільми
+//     filmsTitle.textContent = genre;
+//     filmsList.innerHTML = data[genre]
+//       .map(film => `<div class="film-item">${film}</div>`)
+//       .join('');
+//     filmsBox.style.display = 'block';
+//   });
 
-  genresEl.appendChild(btn);
-});
+//   genresEl.appendChild(btn);
+// });
