@@ -297,25 +297,79 @@
 
 // Д/З: Створити меню з жанрами фільмів. При кліку на жанр виводити назви фільмів цього жанру. (можна використовувати будь-які жанри та фільми)
 
-let activeBtn = null;
+// let activeBtn = null;
 
-function showFilms(btn, genre) {
-  // Знімаємо active з попередньої кнопки
-  if (activeBtn) activeBtn.classList.remove('active');
-  btn.classList.add('active');
-  activeBtn = btn;
+// function showFilms(btn, genre) {
+//   // Знімаємо active з попередньої кнопки
+//   if (activeBtn) activeBtn.classList.remove('active');
+//   btn.classList.add('active');
+//   activeBtn = btn;
 
-  // Ховаємо всі списки фільмів
-  document
-    .querySelectorAll('.films')
-    .forEach(el => (el.style.display = 'none'));
+//   // Ховаємо всі списки фільмів
+//   document
+//     .querySelectorAll('.films')
+//     .forEach(el => (el.style.display = 'none'));
 
-  // Показуємо потрібний
-  document.getElementById(genre).style.display = 'block';
+//   // Показуємо потрібний
+//   document.getElementById(genre).style.display = 'block';
 
-  // Оновлюємо заголовок
-  document.getElementById('films-title').textContent = btn.textContent;
+//   // Оновлюємо заголовок
+//   document.getElementById('films-title').textContent = btn.textContent;
 
-  // Показуємо блок
-  document.getElementById('films-box').style.display = 'block';
+//   // Показуємо блок
+//   document.getElementById('films-box').style.display = 'block';
+// }
+
+// Д/З до модуля № 29
+
+// const btn1 = document.querySelector('#btn1');
+// const btn2 = document.querySelector('#btn2');
+// const btn3 = document.querySelector('#btn3');
+// const btn4 = document.querySelector('#btn4');
+// const btn5 = document.querySelector('#btn5');
+
+// const btn6 = document.querySelector('#btn6');
+
+// btn1.addEventListener('click', () => console.log('click'));
+// btn2.addEventListener('contextmenu', () => console.log('contextmenu'));
+// btn3.addEventListener('mouseout', () => console.log('mouseover'));
+// btn4.addEventListener('mousedown', () => console.log('mousedown'));
+// btn5.addEventListener('mousemove', () => console.log('mousemove'));
+
+// btn6.addEventListener('keydown', () => console.log('keydown'));
+
+// const addBtn = document.querySelector('#add');
+// const removeBtn = document.querySelector('#remove');
+// const clickBtn = document.querySelector('#click');
+
+// const handleClick = () => {
+//   console.log('Hello');
+// };
+// addBtn.addEventListener('click', () => {
+//   clickBtn.addEventListener('click', handleClick);
+// });
+
+// removeBtn.addEventListener('click', () => {
+//   clickBtn.removeEventListener('click', handleClick);
+// });
+
+// const clickBtn = document.querySelector('#click');
+// const infoClick = event => {
+//   console.log('event', event.target);
+// };
+
+// clickBtn.addEventListener('click', infoClick);
+
+const form = document.querySelector('.form');
+const loginInput = form.querySelector('input[type="text"]');
+const passwordInput = form.querySelector('input[type="password"]');
+
+form.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const login = loginInput.value;
+  const password = passwordInput.value;
+  console.log(`Логін: ${login}, пароль: ${password}`);
+  form.reset();
 }
