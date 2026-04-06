@@ -360,16 +360,125 @@
 
 // clickBtn.addEventListener('click', infoClick);
 
-const form = document.querySelector('.form');
-const loginInput = form.querySelector('input[type="text"]');
-const passwordInput = form.querySelector('input[type="password"]');
+// const form = document.querySelector('.form');
+// const loginInput = form.querySelector('input[type="text"]');
+// const passwordInput = form.querySelector('input[type="password"]');
 
-form.addEventListener('submit', handleSubmit);
+// form.addEventListener('submit', handleSubmit);
 
-function handleSubmit(event) {
-  event.preventDefault();
-  const login = loginInput.value;
-  const password = passwordInput.value;
-  console.log(`Логін: ${login}, пароль: ${password}`);
-  form.reset();
-}
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const login = loginInput.value;
+//   const password = passwordInput.value;
+//   console.log(`Логін: ${login}, пароль: ${password}`);
+//   form.reset();
+// }
+
+// const parent = document.querySelector('#parent');
+// const child = document.querySelector('#child');
+// const item = document.querySelector('#item ');
+
+// parent.addEventListener('click', () => console.log('Click Parent!'));
+// child.addEventListener('click', () => console.log('Click Child!'));
+// item.addEventListener('click', () => console.log('Click Item!'));
+
+// const handleClick = event => {
+//   console.log('event:', event.target);
+// };
+// parent.addEventListener('click', handleClick);
+
+// const itemClick = event => {
+//   console.log('itemClick stop');
+//   event.stopPropagation();
+// };
+// const ChildClick = event => {
+//   console.log('ChildClick stop');
+//   event.stopPropagation();
+// };
+
+// const ParentClick = event => {
+//   console.log('ParentClick stop');
+//   event.stopPropagation();
+// };
+
+// parent.addEventListener('click', ParentClick);
+// child.addEventListener('click', ChildClick);
+// item.addEventListener('click', itemClick);
+
+// const nav = document.querySelector('.nav');
+// nav.addEventListener('click', handleClick);
+
+// function handleClick(event) {
+//   event.target.classList.add('active');
+
+//   const checkClass = nav.querySelector('li.active');
+//   if (checkClass) {
+//     event.target.classList.remove('active');
+//   } else {
+//     event.target.classList.add('active');
+//   }
+// }
+
+// const ball = document.querySelector('.ball');
+
+// ball.onmousedown = function (event) {
+//   function move(pageX, pageY) {
+//     ball.style.left = pageX - ball.offsetWidth / 2 + 'px';
+//     ball.style.top = pageY - ball.offsetHeight / 2 + 'px';
+//   }
+
+//   move(event.pageX, event.pageY);
+
+//   function onMouseMove(event) {
+//     move(event.pageX, event.pageY);
+//   }
+//   document.addEventListener('mousemove', onMouseMove);
+
+//   // Зупиняємо перетягування коли відпускаємо мишу
+//   document.onmouseup = function () {
+//     document.removeEventListener('mousemove', onMouseMove);
+//     document.onmouseup = null;
+//   };
+// };
+
+// ################################################
+
+// Д/З № 9
+
+// № 1____________________________________
+
+// const btnHide = document.querySelector('.item');
+// const btnShow = document.querySelector('.show');
+// const box = document.querySelector('.box');
+
+// btnHide.addEventListener('click', function () {
+//   box.style.display = 'none';
+// });
+
+// btnShow.addEventListener('click', function () {
+//   box.style.display = 'block';
+// });
+
+// № 2__________________________________
+
+// const btn = document.querySelector('.item');
+// btn.addEventListener('click', function () {
+//   this.style.display = 'none';
+// });
+
+// 3_____________________________________
+
+// const parents = document.querySelectorAll('.parent');
+
+// parents.forEach(function (parent) {
+//   parent.addEventListener('click', function (event) {
+//     event.stopPropagation(); // зупиняємо спливання події
+
+//     const children = this.querySelector('.children');
+
+//     if (children) {
+//       children.classList.toggle('open');
+//       this.classList.toggle('open');
+//     }
+//   });
+// });
