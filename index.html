@@ -18,19 +18,40 @@
    : Створити меню з жанрами фільмів. При кліку на жанр виводити назви фільмів цього жанру. (можна використовувати
   будь-які жанри та фільми)
 
-  <div data-widget-name="menu">
-    <p>
-      Виберіть жанр
-    </p>
-    <div id="genres"></div>
-    <div id="films-box">
+ 
+  <div data-widget-name="menu">Виберіть жанр
 
-      <div id="film-title"></div>
-      <div id="film-list"></div>
+    <div id="genres">
+      <button class="genre-btn" onclick="showFilms(this, 'fantasy')">Фантастика</button>
+      <button class="genre-btn" onclick="showFilms(this, 'horror')">Жахи</button>
+      <button class="genre-btn" onclick="showFilms(this, 'comedy')">Комедія</button>
+      <button class="genre-btn" onclick="showFilms(this, 'drama')">Драма</button>
+    </div>
+
+    <div id="films-box">
+      <div id="films-title"></div>
+
+      <div id="fantasy" class="films">
+        <div class="film-item">Inception</div>
+
+      </div>
+
+      <div id="horror" class="films">
+        <div class="film-item">Hereditary</div>
+      </div>
+
+      <div id="comedy" class="films">
+        <div class="film-item">Superbad</div>
+
+      </div>
+
+      <div id="drama" class="films">
+        <div class="film-item">Parasite</div>
+
+      </div>
 
     </div>
-  </div> -->
-
+  </div>
 
 
 
