@@ -1,5 +1,27 @@
 {
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/elena1964synyshyn/homework#readme",
+  "bugs": {
+    "url": "https://github.com/elena1964synyshyn/homework/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elena1964synyshyn/homework.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2"
   }
 }
